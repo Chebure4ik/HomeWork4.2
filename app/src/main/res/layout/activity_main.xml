@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="Заказ железнодорожного билета"
+        android:textColor="#0091EA"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/idIn"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:hint="Идентификаатор пасажира "
+        android:paddingStart="10sp"
+        android:textColorHint="#94000000"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        android:layout_margin="20dp"
+        android:background="#3600B8D4"/>
+
+    <EditText
+        android:id="@+id/departurePointIn"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:hint="Пункт назначения"
+        android:paddingStart="10sp"
+        android:textColorHint="#94000000"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idIn"
+        android:layout_margin="20dp"
+        android:background="#3600B8D4"/>
+
+    <EditText
+
+        android:id="@+id/timeIn"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:layout_margin="20dp"
+        android:hint="Время отправления"
+        android:paddingStart="10sp"
+        android:textColorHint="#94000000"
+        android:textSize="17sp"
+        android:background="#3600B8D4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/departurePointIn" />
+
+    <TextView
+
+        android:id="@+id/priceIn"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:layout_margin="20dp"
+        android:gravity="center_vertical"
+        android:hint="Стоимость билета"
+        android:textColor="@color/black"
+        android:paddingStart="10sp"
+        android:textColorHint="#94000000"
+        android:textSize="17sp"
+        android:background="#3600B8D4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timeIn" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:layout_margin="20dp"
+        android:text="Оформить билет"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/priceIn" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
